@@ -1,0 +1,29 @@
+.container{
+  background: #000;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    padding:10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
+}
+.key{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #101010;
+  transition: all 0.2s;
+  border-radius: 3px;
+  flex-direction: column;
+  
+}
+
+.char{
+  font-size: 60px;
+}
+.key.active {
+  background:rgb(0, 255, 81);
+  color:#101010;
+  transform:scale(0.92)
+}
